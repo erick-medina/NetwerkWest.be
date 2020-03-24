@@ -2,13 +2,8 @@
     font-size: 40px;
 }
 
-.padding-top {
-    padding-bottom: 30px;
-}
 
-@media only screen and (max-width: 600px) {
-    .navbar {
-        padding-bottom: 50%;
-    }
-
+.display-4 {
+    position: relative;
+    z-index: 1;
 }
