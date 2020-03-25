@@ -8,11 +8,11 @@
     <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <title>Contact</title>
 </head>
 <body>
-<header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm py-4 navbar-light bg-light">
         <div class="container">
@@ -50,16 +50,96 @@
             </div>
         </div>
     </nav>
-</header>
 <main>
+    <!-- CONTACT HEADER -->
+    <header id="contact-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto text-center">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Google Map -->
-    <div class="container-fluid m-0 p-0">
-        <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 500px">
+    <section class="container-fluid m-0 p-0">
+        <div id="map-container-google-4" class="z-depth-1-half map-container-4">
             <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pluimstraat%2022%2C%208600%20Diksmuide&key=AIzaSyC5YJh8iagHhuQ65-w-6KK8QWQbMXjNEKE" allowfullscreen></iframe>
         </div>
-    </div>
-
+    </section>
+    <!-- Contact form -->
+    <h3 class="mt-5 text-center">Contacteer ons</h3>
+    <section id="contact" class="py-3">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-4 col-lg-5">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h4 class="text-center">Coördinatoren</h4>
+                            <h4>Eveline Pil</h4>
+                            <p>Oostende – Gistel – Veurne – Westkust</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> 0483 29 80 48</p>
+                            <p><i class="fa fa-envelope" aria-hidden="true"></i> eveline.pil@netwerkwest.be</p>
+                            <h4 class="mt-4">Carmen Supeene</h4>
+                            <p>Diksmuide – Ieper – Poperinge</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> 0468 48 02 56</p>
+                            <p><i class="fa fa-envelope" aria-hidden="true"></i> carmen.supeene@netwerkwest.be</p>
+                        </div>
+                    </div>
+                </aside>
+                <form class="col-md-8 col-lg-7">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="text-center">Stuur ons een berichtje</h3>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Naam*" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="E-mailadres*" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Telefoon (optioneel)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="6" placeholder="Bericht*" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
+<!-- FOOTER -->
+<footer id="main-footer" class="text-center p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Copyright &copy;
+                    <span id="year"></span> Erick Medina</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

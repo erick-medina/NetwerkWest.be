@@ -1,0 +1,46 @@
+body {
+    overflow-x: hidden;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+/*Contact header*/
+
+#contact-header {
+    height: 200px;
+    background: url('../../img/contact.jpg');
+    background-position: -600px -260px;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+/* Google Map */
+.map-container-4{
+    overflow:hidden;
+    padding-bottom:30.25%;
+    position:relative;
+    height:0;
+}
+.map-container-4 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.map-container-4{
+    overflow:hidden;
+    padding-bottom:30.25%;
+    position:relative;
+    height:0;
+}
+
+@media only screen and (max-width: 600px) {
+    .map-container-4{
+        padding-bottom:50.25%;
+    }
+
+}
