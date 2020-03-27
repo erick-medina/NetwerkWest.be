@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
     <title>Homepage</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm py-4 navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm py-4 navbar-light bg-light fixed-top" id="nav-bar">
         <div class="container">
             <a class="navbar-brand" href="#">Netwerkwest</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -29,16 +28,16 @@
                     <a class="nav-link mr-xl-3" href="#">Traject</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Situering</a>
+                    <a class="nav-link mr-xl-3" href="situering.html">Situering</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Team</a>
+                    <a class="nav-link mr-xl-3" href="wieiswie.html">Wie is wie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Partners</a>
+                    <a class="nav-link mr-xl-3" href="partners.html">Partners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Beheerscomité</a>
+                    <a class="nav-link mr-xl-3" href="beheerscomite.html">Beheerscomité</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-xl-3" href="#">Vacatures</a>
@@ -245,7 +244,7 @@
         <div class="row">
             <div class="col">
                 <p>Copyright &copy;
-                    <span id="year"></span> Erick Medina</p>
+                    <span id="year"></span> Designed by Erick Medina</p>
             </div>
         </div>
     </div>
@@ -263,6 +262,9 @@
 <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    // To apply Scrollspy in the navbar
+
 </script>
 </body>
 </html>

@@ -8,13 +8,13 @@
     <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
     <title>Contact</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm py-4 navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm py-4 navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Netwerkwest</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -32,7 +32,7 @@
                         <a class="nav-link mr-xl-3" href="#">Situering</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mr-xl-3" href="#">Team</a>
+                        <a class="nav-link mr-xl-3" href="wieiswie.html">Wie is wie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mr-xl-3" href="#">Partners</a>
@@ -53,13 +53,15 @@
 <main>
     <!-- CONTACT HEADER -->
     <header id="contact-header">
-        <div class="container">
+        <div class="dark-overlay">
+        <div class="contact-inner container">
             <div class="row">
                 <div class="col-md-6 m-auto text-center">
                     <h1>Contact Us</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <!-- Google Map -->
@@ -73,7 +75,7 @@
     <section id="contact" class="py-3">
         <div class="container">
             <div class="row">
-                <aside class="col-md-4 col-lg-5">
+                <aside class="col-md-4 col-lg-5 order-2">
                     <div class="card p-4">
                         <div class="card-body">
                             <h4 class="text-center">Coördinatoren</h4>
@@ -88,32 +90,36 @@
                         </div>
                     </div>
                 </aside>
-                <form class="col-md-8 col-lg-7">
-                    <div class="card p-4">
+                <form method="post" name="emailfrom" action="emailsent.html" class="col-md-8 col-lg-7">
+                    <div class="card p-4 order-1">
                         <div class="card-body">
                             <h3 class="text-center">Stuur ons een berichtje</h3>
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Naam*" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Naam*" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="E-mailadres*" required>
+                                        <input type="email" name="email" class="form-control" placeholder="E-mailadres*" required>
                                     </div>
                                 </div>
+                                <?php
+
+
+                                ?>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Telefoon (optioneel)">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Telefoon (optioneel)">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="6" placeholder="Bericht*" required></textarea>
+                                        <textarea class="form-control" name="message" rows="6" placeholder="Bericht*" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -156,3 +162,4 @@
 </script>
 </body>
 </html>
+

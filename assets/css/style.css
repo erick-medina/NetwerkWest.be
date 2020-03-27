@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    margin-top: 90px;
 }
 
 .first-letters::first-letter {
@@ -11,12 +12,90 @@ body {
     z-index: 1;
 }
 
+/*Navbar*/
+
+.navbar {
+    border-bottom: #4d4fff 3px solid;
+    opacity: 0.8;
+}
+
 .nav-link {
     font-size: 18px;
 }
 
 .btn-2 {
     letter-spacing: 0;
+}
+
+/*Contact header*/
+
+#contact-header {
+    height: 200px;
+    background: url('../../img/contact.jpg');
+    background-position: -600px -260px;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+#contact-header .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 229, 237, 0.7);
+}
+
+#contact-header .contact-inner {
+    padding-top: 150px;
+}
+
+#wieiswie-header {
+    height: 200px;
+    background: url('../../img/team.jpg');
+    background-position: -600px -260px;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#beheerscomite-header {
+    height: 200px;
+    background: url('../../img/beheerscomité.jpg');
+    background-position: -600px -260px;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#partners-header {
+    height: 200px;
+    background: url('../../img/partners.jpg');
+    background-position: -600px -260px;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+/* Google Map */
+.map-container-4{
+    overflow:hidden;
+    padding-bottom:30.25%;
+    position:relative;
+    height:0;
+}
+.map-container-4 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.map-container-4{
+    overflow:hidden;
+    padding-bottom:30.25%;
+    position:relative;
+    height:0;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -60,5 +139,8 @@ body {
         -webkit-animation: fill 1s forwards;
         -moz-animation: fill 1s forwards;
         opacity: 1;
+    }
+    .carousel-item {
+        height: 450px;
     }
 }

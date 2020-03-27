@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Situering</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm py-4 navbar-light bg-light fixed-top" id="nav-bar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Netwerkwest</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="#">Traject</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="#">Situering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="wieiswie.html">Wie is wie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="#">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="beheerscomite.html">Beheerscomité</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-3" href="#">Vacatures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <!-- SLIDER WITH CAPTIONS -->
+    <div id="slider1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#slider1" data-slide-to="0"></li>
+            <li data-target="#slider1" data-slide-to="1"></li>
+            <li data-target="#slider1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://source.unsplash.com/user/erondu/1600x700" alt="First Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Slide One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://source.unsplash.com/random/1600x700" alt="Second Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Slide Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://source.unsplash.com/4yta6mU66dE/1600x700" alt="Third Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Slide Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+                </div>
+            </div>
+        </div>
+        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#slider1" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</main>
+<!-- FOOTER -->
+<footer id="main-footer" class="text-center p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Copyright &copy;
+                    <span id="year"></span> Erick Medina</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // To apply Scrollspy in the navbar
+
+</script>
+</body>
+</html>
