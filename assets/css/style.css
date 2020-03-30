@@ -49,6 +49,8 @@ body {
     padding-top: 150px;
 }
 
+/***** WIE IS WIE *****/
+
 #wieiswie-header {
     height: 200px;
     background: url('../../img/team.jpg');
@@ -58,13 +60,123 @@ body {
     padding-top: 50px;
 }
 
-#beheerscomite-header {
-    height: 200px;
-    background: url('../../img/beheerscomité.jpg');
-    background-position: -600px -260px;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 50px;
+/* Puzzle section */
+
+.jigsaw1 {
+    font-size: 35px;
+    width: 6em;
+    height: 6em;
+    margin: 50px;
+    position: relative;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+
+.jigsaw1,
+.jigsaw1 span {
+    background-color: #0284cf;
+}
+
+.jigsaw1 .t {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: -1.5em;
+    left: 2em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    border-radius: 4em;
+}
+
+.jigsaw1 .r {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 2em;
+    left: 5.5em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    border-radius: 4em;
+}
+
+.jigsaw1 .b {
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 4.5em;
+    left: 2.2em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    border-radius: 4em;
+    background-color: #fff;
+}
+
+.jigsaw1 .l {
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 2.2em;
+    left: -.4em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    border-radius: 4em;
+    background-color: #fff;
+}
+
+.jigsaw2 {
+    font-size: 35px;
+    width: 6em;
+    height: 6em;
+    margin: 50px;
+    position: relative;
+    border-radius: 6%;
+    background-color: #0284cf;
+}
+
+.jigsaw2:before {
+    content: "";
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 2.2em;
+    left: -.4em;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.jigsaw2:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 2em;
+    left: 5.5em;
+    border-radius: 50%;
+    background-color: #0284cf;
+}
+
+.jigsaw2 span {
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: -1.5em;
+    left: 2em;
+    border-radius: 50%;
+    background-color: #0284cf;
+}
+
+.jigsaw2 span:before {
+    content: "";
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 6em;
+    left: .2em;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
 #partners-header {

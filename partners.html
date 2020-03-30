@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm py-4 navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-sm py-4 navbar-light bg-light fixed-top" id="nav-bar">
     <div class="container">
         <a class="navbar-brand" href="#">Netwerkwest</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="index.html">Home</a>
+                    <a class="nav-link mr-xl-3" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Traject</a>
+                    <a class="nav-link mr-xl-3" href="traject.html">Traject</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Situering</a>
+                    <a class="nav-link mr-xl-3" href="situering.html">Situering</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-xl-3" href="wieiswie.html">Wie is wie</a>
@@ -37,10 +37,7 @@
                     <a class="nav-link mr-xl-3" href="partners.html">Partners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="beheerscomite.html">Beheerscomité</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="#">Vacatures</a>
+                    <a class="nav-link mr-xl-3" href="vacatures.html">Vacatures</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -49,53 +46,50 @@
         </div>
     </div>
 </nav>
-<main>
-    <!-- PARTNERS HEADER -->
-    <header id="partners-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 m-auto text-center">
-                </div>
+<!-- PARTNERS HEADER -->
+<header id="partners-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto text-center">
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- ACCORDION -->
-    <div id="accordion">
-        <div class="card">
-            <div class="card-header">
-                <h5>
-                    <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
-                        <div class="text-center">ONDERSTEUNERS</div>
-                    </a>
-                </h5>
-            </div>
+<!-- PUZZLE SECTION -->
+<section>
+    <div class="row">
+    <div class="jigsaw1">
+        <span class="t"></span>
+        <span class="r"></span>
+        <span class="b"></span>
+        <span class="l"></span>
+    </div>
 
-            <div id="collapse1" class="collapse show">
-                <div class="card-body">
-                    Ondersteuning is mogelijk in fase 2 en 3 van het <a href="http://www.prodiagnostiek.be/?q=zorgcontinu%C3%BCm-en-beslisboom" target="_blank">zorgcontinuüm</a>.
-                </div>
-            </div>
+    <div class="jigsaw2">
+        <span class="t"></span>
+        <span class="r"></span>
+        <span class="b"></span>
+        <span class="l"></span>
+    </div>
+    </div>
+    <div class="row">
+        <div class="jigsaw3">
+            <span class="t"></span>
+            <span class="r"></span>
+            <span class="b"></span>
+            <span class="l"></span>
         </div>
 
-        <div class="card">
-            <div class="card-header">
-                <h5>
-                    <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
-                        <div class="text-center">COORDINATOREN</div>
-                    </a>
-                </h5>
-            </div>
-
-            <div id="collapse2" class="collapse">
-                <div class="card-body">
-                    Buitengewoon en gewoon onderwijs, CLB en pedagogische begeleiding werken samen als gelijkwaardige
-                    partners.
-                </div>
-            </div>
+        <div class="jigsaw4">
+            <span class="t"></span>
+            <span class="r"></span>
+            <span class="b"></span>
+            <span class="l"></span>
         </div>
+    </div>
+</section>
 
-</main>
 <!-- FOOTER -->
 <footer id="main-footer" class="text-center p-4">
     <div class="container">
@@ -120,6 +114,8 @@
 <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+
 </script>
 </body>
 </html>
