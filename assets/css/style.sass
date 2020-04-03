@@ -1,11 +1,18 @@
 // VARIABLES
 $backgroundColor: #FAFAFA
+$backgroundColor2: #61B7A0
 $color1: #286DA8
 $color2: #63DDBD
 $color3: #CD5360
 $colorText1: #0A2239
-$font1: Open Sans, sans-serif
+$font1: 'Open Sans', sans-serif
+$font2: 'Gotu', sans-serif
+$font3: 'Lato', sans-serif
+$font4: Roboto Light
 $textSize1: 18px
+$fontSize2: 25px
+$fontSize3: 40px
+$fontSize4: 20px
 
 
 // MIXIN
@@ -30,25 +37,50 @@ body
 #middle-title
   font-family: $font1
   font-weight: bold
-  font-size: 40px
-  color: $colorText1
+  font-size: $fontSize3
+  color: $color1
 
 .section_title
-  font-family: 'playball', serif
-  font-style: italic
-  font-size: 70px
-  font-weight: 700
+  font-family: $font1
   color: #C7D5E4
-  line-height: 0.75
-  z-index: 0
+  font-size: 60px
+  margin-bottom: -20px
 
 #middle-par
-  font-size: 20px
+  font-size: $fontSize4
+  color: $colorText1
+  font-family: $font2
 
 // ACCORDION
 
+.card-header
+  padding: 0
+  background-color: $backgroundColor2
+
 .first-letters::first-letter
-  font-size: 40px
+  font-size: $fontSize3
+  color: $colorText1
+  font-family: $font3
+
+.first-letters
+  color: $backgroundColor
+  font-family: $font3
+  font-size: $fontSize2
+
+.card-body
+  font-family: $font4
+  font-size: $textSize1
+
+// FOOTER
+@import footer
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .carousel-item
+    height: 450px
+
+
+
 
 
 

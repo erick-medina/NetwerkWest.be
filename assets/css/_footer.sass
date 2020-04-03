@@ -1,0 +1,73 @@
+// First footer
+#main-footer
+  height: 350px
+  background-color: #c1ccd5
+
+.footer-title
+  font-family: $font1
+
+// Social media icon
+#btn
+  display: inline-block
+  width: 50px
+  height: 50px
+  background: $backgroundColor
+  border-radius: 30%
+  box-shadow: 0 5px 15px -5px #00000070
+  color: $color1
+  overflow: hidden
+  position: relative
+  font-size: 25px
+
+  i
+    font-size: 35px
+    transition: 0.2s linear
+
+  &:hover i
+    transform: scale(1.3)
+    color: $backgroundColor
+
+  &::before
+    content: ""
+    position: absolute
+    width: 120%
+    height: 120%
+    background: $colorText1
+    transform: rotate(45deg)
+    left: -110%
+    top: 90%
+
+  &:hover::before
+    animation: aaa 0.7s 1
+    top: -10%
+    left: -10%
+
+    @keyframes aaa
+      0%
+        left: -110%
+        top: 90%
+
+      50%
+        left: 10%
+        top: -30%
+
+      100%
+        top: -10%
+        left: -10%
+
+// Second footer
+#second-footer
+  background-color: $colorText1
+  height: 50px
+
+#text-footer
+  color: $backgroundColor
+  font-family: $font1
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  #main-footer
+    height: 480px
+
+  #btn
+    margin-bottom: 14px

@@ -4,13 +4,13 @@ body {
   background-color: #FAFAFA; }
 
 .navbar {
-  border-bottom: #63DDBD 3px solid;
+  border-bottom: #286DA8 3px solid;
   opacity: 0.8;
   background: #FAFAFA; }
 
 .nav-link {
   font-size: 18px;
-  font-family: Open Sans, sans-serif;
+  font-family: "Gotu", sans-serif;
   color: #0A2239;
   font-weight: bold; }
 
@@ -159,24 +159,105 @@ body {
   80% {
     transform: scaleX(1.9) scaleY(0.6) translateX(-30%); } }
 #middle-title {
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 40px;
-  color: #0A2239; }
+  color: #286DA8; }
 
 .section_title {
-  font-family: "playball", serif;
-  font-style: italic;
-  font-size: 70px;
-  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
   color: #C7D5E4;
-  line-height: 0.75;
-  z-index: 0; }
+  font-size: 60px;
+  margin-bottom: -20px; }
 
 #middle-par {
-  font-size: 20px; }
+  font-size: 20px;
+  color: #0A2239;
+  font-family: "Gotu", sans-serif; }
+
+.card-header {
+  padding: 0;
+  background-color: #61B7A0; }
 
 .first-letters::first-letter {
-  font-size: 40px; }
+  font-size: 40px;
+  color: #0A2239;
+  font-family: "Lato", sans-serif; }
+
+.first-letters {
+  color: #FAFAFA;
+  font-family: "Lato", sans-serif;
+  font-size: 25px; }
+
+.card-body {
+  font-family: Roboto Light;
+  font-size: 18px; }
+
+#main-footer {
+  height: 350px;
+  background-color: #c1ccd5; }
+
+.footer-title {
+  font-family: "Open Sans", sans-serif; }
+
+#btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #FAFAFA;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #286DA8;
+  overflow: hidden;
+  position: relative;
+  font-size: 25px; }
+  #btn i {
+    font-size: 35px;
+    transition: 0.2s linear; }
+  #btn:hover i {
+    transform: scale(1.3);
+    color: #FAFAFA; }
+  #btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #0A2239;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%; }
+  #btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%; }
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%; }
+  50% {
+    left: 10%;
+    top: -30%; }
+  100% {
+    top: -10%;
+    left: -10%; } }
+#second-footer {
+  background-color: #0A2239;
+  height: 50px; }
+
+#text-footer {
+  color: #FAFAFA;
+  font-family: "Open Sans", sans-serif; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #main-footer {
+    height: 480px; }
+
+  #btn {
+    margin-bottom: 14px; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .carousel-item {
+    height: 450px; } }
 
 /*# sourceMappingURL=style.css.map */
