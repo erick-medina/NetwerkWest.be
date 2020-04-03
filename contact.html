@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </aside>
-                <form method="post" name="emailfrom" action="emailsent.html" class="col-md-8 col-lg-7">
+                <form method="post" name="emailfrom" action="contact.php" class="col-md-8 col-lg-7">
                     <div class="card p-4 order-1">
                         <div class="card-body">
                             <h3 class="text-center">Stuur ons een berichtje</h3>
@@ -107,20 +107,22 @@
                                         <input type="email" name="email" class="form-control" placeholder="E-mailadres*" required>
                                     </div>
                                 </div>
-                                <?php
-
-
-                                ?>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <input type="tel" name="phone" class="form-control" placeholder="Telefoon (optioneel)">
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Onderwerp*" required>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 mb-1">
                                     <div class="form-group">
                                         <textarea class="form-control" name="message" rows="6" placeholder="Bericht*" required></textarea>
+                                        <small class="text-muted">* Required field</small>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
