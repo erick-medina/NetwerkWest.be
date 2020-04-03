@@ -1,10 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Homepage</title>
 </head>
 <body>
+<script src="assets/js/script.js"></script>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm py-4 fixed-top" id="nav-bar">
+    <div class="container">
+        <a class="navbar-brand" id="logo-font" href="#" alt="">ONW LOGO</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-4" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-4" href="traject.html">Traject</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-4" href="situering.html">Situering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-4" href="wieiswie.html">Wie is wie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-4" href="partners.html">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-xl-4" href="vacatures.html">Vacatures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- TRAJECT HEADER -->
+<header id="traject-header">
+    <div class="dark-overlay">
+        <div class="contact-inner container">
+            <div class="row">
+                <div id="traject-body" class="col-md-6 m-auto text-center">
+                    <h1>Traject</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- MIDDLE PARAGRAPH -->
+<section id="middle-par" class="text-center col-md-6 offset-md-3 mb-5 mt-5">
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste nemo praesentium recusandae. Accusantium, adipisci consectetur expedita incidunt magni modi nihil officiis suscipit tempora tempore. Aperiam culpa ipsum iste quas..</p>
+</section>
+
+<!-- STAPPENPLAN -->
+
+<section class="">
+    <div class="d-flex flex-wrap row-hl">
+        <div class="item-hl">
+            <button class="skewBtn blue1">Voortraject</button>
+        </div>
+        <div class="item-hl">
+            <button class="skewBtn blue2">Aanmelding</button>
+        </div>
+        <div class="item-hl">
+            <button class="skewBtn blue3">Toewijzing</button>
+        </div>
+        <div class="item-hl">
+            <button class="skewBtn blue4">Opstartvergadering</button>
+        </div>
+        <div class="item-hl">
+            <button class="skewBtn blue5">Ondersteuning</button>
+        </div>
+        <div class="item-hl">
+            <button class="skewBtn blue6">Evalueren</button>
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer id="main-footer" class="text-center mt-5 p-4 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 align-self-center">
+                <h3 class="footer-title mb-4">Vind-ons-leuk op Facebook!</h3>
+                <a id="btn" href="https://www.facebook.com/Ondersteuningsnetwerk-West-106662227648329/" target="_blank">
+                    <i class="fa fa-facebook mt-2"></i>
+                </a>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOndersteuningsnetwerk-West-106662227648329%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="380" height="300" style="border-left:20px solid #000; border-right:20px solid #000; border-top:40px solid #000; border-bottom:40px solid #000; border-radius:25px; box-shadow:0 10px 15px #888;  overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="second-footer" class="text-center pt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p id="text-footer">Copyright &copy;
+                    <span id="year"></span> ONW - Designed by Erick Medina</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // To apply Scrollspy in the navbar
+
+</script>
 </body>
 </html>
