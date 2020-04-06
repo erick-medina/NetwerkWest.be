@@ -66,36 +66,248 @@
 </header>
 
 <!-- MIDDLE PARAGRAPH -->
-<section id="middle-par" class="text-center col-md-6 offset-md-3 mb-5 mt-5">
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste nemo praesentium recusandae. Accusantium, adipisci consectetur expedita incidunt magni modi nihil officiis suscipit tempora tempore. Aperiam culpa ipsum iste quas..</p>
+<section id="middle-par" class="to-center text-center col-md-6 offset-md-3 mt-5">
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste nemo praesentium
+        recusandae. Accusantium, adipisci consectetur expedita incidunt magni modi nihil officiis suscipit tempora
+        tempore. Aperiam culpa ipsum iste quas..</p>
 </section>
 
 <!-- STAPPENPLAN -->
 
 <section class="">
-    <div class="d-flex flex-wrap row-hl">
-        <div class="item-hl">
-            <button class="skewBtn blue1">Voortraject</button>
+    <div class="d-flex justify-content-center flex-wrap row-hl">
+        <div class="item-hl ml-4">
+            <button class="skewBtn blue1" data-toggle="modal" data-target="#modalV">
+                <div>1.</div>
+                <div>Voortraject</div>
+            </button>
         </div>
-        <div class="item-hl">
-            <button class="skewBtn blue2">Aanmelding</button>
+        <div class="item-hl ml-4">
+            <button class="skewBtn blue2" data-toggle="modal" data-target="#modalA">
+                <div>2.</div>
+                <div>Aanmelding</div>
+            </button>
         </div>
-        <div class="item-hl">
-            <button class="skewBtn blue3">Toewijzing</button>
+        <div class="item-hl ml-4">
+            <button class="skewBtn blue3" data-toggle="modal" data-target="#modalT">
+                <div>3.</div>
+                <div>Toewijzing</div>
+            </button>
         </div>
-        <div class="item-hl">
-            <button class="skewBtn blue4">Opstartvergadering</button>
+        <div class="item-hl ml-4">
+            <button class="skewBtn blue4" data-toggle="modal" data-target="#modalOp">
+                <div>4.</div>
+                <div class="title-opstart">Opstartvergadering</div>
+            </button>
         </div>
-        <div class="item-hl">
-            <button class="skewBtn blue5">Ondersteuning</button>
+        <div class="item-hl ml-4">
+            <button class="skewBtn blue5" data-toggle="modal" data-target="#modalOn">
+                <div>5.</div>
+                <div>Ondersteuning</div>
+            </button>
         </div>
-        <div class="item-hl">
-            <button class="skewBtn blue6">Evalueren</button>
+        <div class="item-hl ml-4">
+            <button class="skewBtn blue6" data-toggle="modal" data-target="#modalE">
+                <div>6.</div>
+                <div>Evalueren</div>
+            </button>
         </div>
     </div>
 </section>
+<article class="modal" id="modalV">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-12">
+                    <h4 class="modal-title text-center">1. Voortraject
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </h4>
+                </div>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>School formuleert zorgvraag aan CLB als basiszorg (fase 0) en verhoogde zorg (fase 1) niet
+                        volstaat.
+                    </li>
+                    <li>CLB doorloopt handelingsgericht diagnostisch traject (HGD-traject) met school en ouders. Het
+                        ondersteuningsnetwerk is hierbij niet betrokken.
+                    </li>
+                    <li>Een mogelijke uitkomst van het HGD-traject is het opmaken van een gemotiveerd verslag of
+                        verslag.
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalA">
+                    Volgende stap
+                </button>
+            </div>
+
+        </div>
+    </div>
+</article>
+<article class="modal" id="modalA">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="col-12 modal-title text-center">2. Aanmelding
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>De school gewoon onderwijs doet de aanmelding van de leerling bij het zorgloket. Deze aanmelding
+                    gebeurt via mail: zorgloket@netwerkwest.be</p>
+                <ul>
+                    <li>Aanmelding met een nieuw (G)V: digitale versie van het (G)V + het sjabloon opstart
+                        ondersteuning.
+                    </li>
+                    <li>Aanmelding na een onderbreking: sjabloon opstart ondersteuning met formulering van de huidige
+                        ondersteuningsnoden van de leerling, de leerkracht en het team.
+                    </li>
+                    <li>Aanmelding bij een schoolverandering: digitale versie van het (G)V + sjabloon opstart
+                        ondersteuning met formulering van de huidige ondersteuningsnoden van de leerling, de leerkracht
+                        en het team.
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#modalV">Vorige
+                    stap
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalT">
+                    Volgende stap
+                </button>
+            </div>
+
+        </div>
+    </div>
+</article>
+<article class="modal" id="modalT">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="col-12 modal-title text-center">3. Toewijzing
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>Het zorgloket brengt de school en het CLB op de hoogte wie de ondersteuner voor de aangemelde
+                    leerling wordt. Bij de toewijzing wordt rekening gehouden met een aantal criteria zoals een beperkt
+                    aantal ondersteuners per school, een beperkt aantal scholen per ondersteuner, expertise van de
+                    ondersteuners, continuering van de ondersteuning, beperken van afstanden die ondersteuners afleggen,
+                    ruimte in het uurrooster.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#modalA">Vorige
+                    stap
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalOp">
+                    Volgende stap
+                </button>
+            </div>
+
+        </div>
+    </div>
+</article>
+<article class="modal" id="modalOp">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="col-12 modal-title text-center">4. Opstartvergadering
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>De praktische organisatie wordt opgenomen door de school.</p>
+                <h5>Inhoud:</h5>
+                <ul>
+                    <li>Uitleg over de werking van het ONW.</li>
+                    <li>Bespreking van het (G)V + sjabloon opstart ondersteuning.</li>
+                    <li>Formulering van doelstellingen voor de komende 3 maanden.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#modalT">Vorige
+                    stap
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalOn">
+                    Volgende stap
+                </button>
+            </div>
+
+        </div>
+    </div>
+</article>
+<article class="modal" id="modalOn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="col-12 modal-title text-center">5. Ondersteuning
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <h5>5.1 Aard van de ondersteuning</h5>
+                <p>De geboden ondersteuning kan, naargelang de ondersteuningsvraag, leerkracht-, team- of
+                    leerlinggericht zijn en moet steeds voelbaar zijn tot op de klasvloer. Het ondersteuningsmodel legt
+                    de nadruk op leerkracht- en teamgerichte ondersteuning, zonder de leerlinggerichte ondersteuning uit
+                    het oog te verliezen. Elke vorm van ondersteuning moet erop gericht zijn dat scholen, lerarenteams
+                    en leerlingen er op termijn sterker van worden.</p>
+                <h5>5.2 Intensiteit en duur van de ondersteuning</h5>
+                <p>Het aantal begeleidingsmomenten binnen een bepaalde periode is flexibel.</p>
+                <p>De periode waarin ondersteuning wordt voorzien is flexibel, alsook het moment waarop de ondersteuning
+                    start. Eens de ondersteuning is opgestart zal minimum om de 3 maanden geëvalueerd worden of verdere
+                    ondersteuning nodig blijft. Indien blijkt dat er geen ondersteuningsnoden zijn, kaderend binnen fase
+                    2 van zorgcontinuüm, wordt de ondersteuning on hold geplaatst. Indien er op een later moment opnieuw
+                    ondersteuningsnoden zijn binnen fase 2 kan de ondersteuning terug opgestart worden.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#modalOp">Vorige
+                    stap
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalE">
+                    Volgende stap
+                </button>
+            </div>
+
+        </div>
+    </div>
+</article>
+<article class="modal" id="modalE">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="col-12 modal-title text-center">6. Evalueren
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>Ondersteuner en school evalueren minimum om de 3 maanden. De school brengt na dit overleg de ouders
+                    op de hoogte.</p>
+                <h5>Inhoud:</h5>
+                <ul>
+                    <li>Werden de afgesproken doelen bereikt?</li>
+                    <li>Heeft de school bijkomende ondersteuningsnoden binnen fase 2 of 3?</li>
+                    <li>Blijft de manier van ondersteunen hetzelfde?</li>
+                    <li>Wordt de ondersteuning gecontinueerd, onderbroken of stopgezet?</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#modalOn">Vorige
+                    stap
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</article>
 <!-- FOOTER -->
-<footer id="main-footer" class="text-center mt-5 p-4 ">
+<footer id="main-footer" class="todos text-center p-4 ">
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-6 align-self-center">
@@ -106,7 +318,9 @@
             </div>
             <div class="col-xl-6 col-lg-6">
                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOndersteuningsnetwerk-West-106662227648329%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                        width="380" height="300" style="border-left:20px solid #000; border-right:20px solid #000; border-top:40px solid #000; border-bottom:40px solid #000; border-radius:25px; box-shadow:0 10px 15px #888;  overflow:hidden" scrolling="no" frameborder="0"
+                        width="380" height="300"
+                        style="border-left:20px solid #000; border-right:20px solid #000; border-top:40px solid #000; border-bottom:40px solid #000; border-radius:25px; box-shadow:0 10px 15px #888;  overflow:hidden"
+                        scrolling="no" frameborder="0"
                         allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>

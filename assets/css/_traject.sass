@@ -1,3 +1,5 @@
+/*Header*/
+
 #traject-header
 
   height: 200px
@@ -5,27 +7,34 @@
   padding-top: 50px
   z-index: 1
 
+.to-center
+  margin-bottom: 80px
+
 /*STAPPENPLAN*/
 
 .skewBtn
-    width: 180px
-    height: 80px
-    outline: none
-    cursor: pointer
-    background: none
-    transition: 0.5s
-    font-size: 24px
-    border-radius: 5px
-    font-family: "Lato", sans-serif
+  width: 180px
+  height: 80px
+  outline: none
+  cursor: pointer
+  background: none
+  transition: 0.5s
+  font-size: 24px
+  border-radius: 5px
+  font-family: "Lato", sans-serif
+  position: relative
+  overflow: hidden
 
-    &:hover
-      border: none
-      color: white
-      font-size: 28px
-      transform: scale(1.1)
+  &:hover
+    border: none
+    color: white
+    font-size: 28px
+    transform: scale(1.1)
 
-/* Buttons
+.title-opstart
+  font-size: 20px !important
 
+/* Buttons */
 $buttoncol1: #0E0693
 $buttoncol2: #292BA8
 $buttoncol3: #4451BD
@@ -35,50 +44,75 @@ $buttoncol6: #96C2FD
 
 
 .blue1
-  border: 2px solid $buttoncol1
-  color: $colorText1
-
-  &:hover
-    background-color: $buttoncol1
-    transition: all 0.3s ease-in-out
-
-.blue2
-  border: 2px solid $buttoncol2
-  color: $colorText1
-
-  &:hover
-    background-color: $buttoncol2
-    transition: all 0.3s ease-in-out
-
-.blue3
-  border: 2px solid $buttoncol3
-  color: $colorText1
-
-  &:hover
-    background-color: $buttoncol3
-    transition: all 0.3s ease-in-out
-
-.blue4
-  border: 2px solid $buttoncol4
-  color: $colorText1
-
-  &:hover
-    background-color: $buttoncol4
-    transition: all 0.3s ease-in-out
-
-.blue5
-  border: 2px solid $buttoncol5
-  color: $colorText1
-
-  &:hover
-    background-color: $buttoncol5
-    transition: all 0.3s ease-in-out
-
-.blue6
   border: 2px solid $buttoncol6
-  color: $colorText1
+  color: $backgroundColor
+  background-color: $buttoncol1
 
   &:hover
     background-color: $buttoncol6
     transition: all 0.3s ease-in-out
 
+.blue2
+  border: 2px solid $buttoncol5
+  color: $backgroundColor
+  background-color: $buttoncol2
+
+  &:hover
+    background-color: $buttoncol5
+    transition: all 0.3s ease-in-out
+
+.blue3
+  border: 2px solid $buttoncol4
+  color: $backgroundColor
+  background-color: $buttoncol3
+
+  &:hover
+    background-color: $buttoncol4
+    transition: all 0.3s ease-in-out
+
+.blue4
+  border: 2px solid $buttoncol3
+  color: $backgroundColor
+  background-color: $buttoncol4
+
+  &:hover
+    background-color: $buttoncol3
+    transition: all 0.3s ease-in-out
+
+.blue5
+  border: 2px solid $buttoncol2
+  color: $backgroundColor
+  background-color: $buttoncol5
+
+  &:hover
+    background-color: $buttoncol2
+    transition: all 0.3s ease-in-out
+
+.blue6
+  border: 2px solid $buttoncol1
+  color: $backgroundColor
+  background-color: $buttoncol6
+
+  &:hover
+    background-color: $buttoncol1
+    transition: all 0.3s ease-in-out
+
+.modal-body
+  font-family: $font4
+  background: $backgroundColor
+  color: $colorText1
+  font-size: $textSize1
+
+.modal-header
+  font-family: $font1
+  background: $colorText1
+  color: $backgroundColor
+
+.close
+  color: white
+
+.btn-secondary
+  background: $colorText1 !important
+
+.todos
+  margin-top: 100px !important
