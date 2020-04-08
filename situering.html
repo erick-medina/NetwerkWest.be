@@ -8,36 +8,39 @@
     <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Situering</title>
+    <title>Ondersteuningsnetwerk West || Situering</title>
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm py-4 navbar-light bg-light fixed-top" id="nav-bar">
+<nav class="navbar navbar-expand-sm py-4 navbar-light fixed-top" id="nav-bar">
     <div class="container">
-        <a class="navbar-brand" href="#">Netwerkwest</a>
+        <a class="navbar-brand" id="logo-font" href="#" alt="">ONW LOGO</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+            <span id="some" class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" id="child1" href="index.html">Home</a>
+                    <a class="nav-link mr-xl-4" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="traject.html">Traject</a>
+                    <a class="nav-link mr-xl-4" href="traject.html">Traject</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="situering.html">Situering</a>
+                    <a class="nav-link mr-xl-4" href="situering.html">Situering</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="wieiswie.html">Wie is wie</a>
+                    <a class="nav-link mr-xl-4" href="wieiswie.html">Wie is wie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="partners.html">Partners</a>
+                    <a class="nav-link mr-xl-4" href="partners.html">Partners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-xl-3" href="vacatures.html">Vacatures</a>
+                    <a class="nav-link mr-xl-4" href="vacatures.html">Vacatures</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -48,63 +51,103 @@
 </nav>
 <main>
     <!-- SLIDER WITH CAPTIONS -->
-    <div id="slider1" class="carousel slide" data-ride="carousel">
+    <div id="sliderOne" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li class="active" data-target="#slider1" data-slide-to="0"></li>
-            <li data-target="#slider1" data-slide-to="1"></li>
+            <li class="active" data-target="#sliderOne" data-slide-to="0"></li>
+            <li data-target="#sliderOne" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block img-fluid" src="https://source.unsplash.com/random/1600x700" alt="Region1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Slide One</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+            <div id="carousel-situering" class="carousel-item active">
+                <img id="carousel-item" class="d-block img-fluid" src="img/SITUERING.jpg" alt="Region1">
+                <div class="carousel-caption d-md-block">
+                    <h3>Situering</h3>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block img-fluid" src="https://source.unsplash.com/random/1600x700" alt="Regio2">
+            <div id="carousel-situering2" class="carousel-item">
+                <img class="d-block img-fluid" src="img/SITUERING2.jpg" alt="Regio2">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Slide Two</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
                 </div>
             </div>
         </div>
-        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-
-        <a href="#slider1" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
     </div>
-    <!-- MAP WEST-VLAANDEREN -->
-    <h1 class="text-center">Kaart van West-Vlaanderen</h1>
-    <section id="kaart-vlaanderen">
-        <figure>
-            <img src="img/3.%20situering_kaart.jpg" class="img-fluid rounded" id="map-westV" alt="West-Vlaanderen">
-        </figure>
-        <!-- DESCRIPTION SITUERING -->
-            <h3 class="text-center">Ondersteuningsnetwerk West is werkzaam als 1 team binnen de regio’s:</h3>
-            <ul>
-                <li>Ieper</li>
-                <li>Poperinge</li>
-                <li>Diksmuide</li>
-                <li>Oostende</li>
-                <li>Gistel</li>
-                <li>Veurne</li>
-                <li>Westkust</li>
-            </ul>
+    <!-- MIDDLE PARAGRAPH -->
+    <article>
+    <section id="middle-par" class="text-center col-md-6 offset-md-3 mt-5">
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste nemo praesentium
+            recusandae. Accusantium, adipisci consectetur expedita incidunt magni modi nihil officiis suscipit tempora
+            tempore. Aperiam culpa ipsum iste quas..</p>
     </section>
-
-
+    <!-- MAP WEST-VLAANDEREN -->
+    <h3 id="center-title" class="text-center steaky-top">Ondersteuningsnetwerk West is werkzaam als 1 team binnen de regio’s:</h3>
+    <!-- DESCRIPTION SITUERING -->
+    <section class=" text-center">
+        <ul id="list-ul" class="list-inline">
+            <li class="mr-4 list-inline-item">Ieper</li>
+            <li class="mr-4 list-inline-item">Poperinge</li>
+            <li class="mr-4 list-inline-item">Diksmuide</li>
+            <li class="mr-4 list-inline-item">Oostende</li>
+            <li class="mr-4 list-inline-item">Gistel</li>
+            <li class="mr-4 list-inline-item">Veurne</li>
+            <li class="mr-4 list-inline-item">Westkust</li>
+        </ul>
+    </section>
+    <section class="row">
+        <section class="col-md-6 offset-md-3" id="kaart-vlaanderen">
+            <div class="gradient-border">
+                <a class="" href="#">
+                    <img src="img/3.%20situering_kaart_bijgenkipt.jpg" class="img-fluid rounded" id="map-westV"
+                         alt="West-Vlaanderen">
+                </a>
+            </div>
+        </section>
+    </section>
+    </article>
+    <div class="main-situering" class="row">
+        <div class="col-md-3 offset-md-3">
+            <a id="situering-button" class="btn text-center" data-target="#modalIMG" data-toggle="modal" href="#">Zie kaart</a>
+        </div>
+        <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body mb-0 p-0">
+                        <img src="img/3.%20situering_kaart_bijgenkipt.jpg" alt="" style="width:100%">
+                    </div>
+                    <div class="modal-footer">
+                        <div><a href="img/3.%20situering_kaart_bijgenkipt.jpg" target="_blank">Downloaden</a></div>
+                        <button class="btn btn-outline-primary btn-rounded btn-md text-center" data-dismiss="modal" type="button">Sluiten</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </main>
 <!-- FOOTER -->
-<footer id="main-footer" class="text-center p-4">
+<footer id="main-footer" class="text-center mt-5 p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 align-self-center">
+                <h3 class="footer-title mb-4">Vind-ons-leuk op Facebook!</h3>
+                <a id="btn" href="https://www.facebook.com/Ondersteuningsnetwerk-West-106662227648329/" target="_blank">
+                    <i class="fa fa-facebook mt-2"></i>
+                </a>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOndersteuningsnetwerk-West-106662227648329%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="380" height="300"
+                        style="border-left:20px solid #000; border-right:20px solid #000; border-top:40px solid #000; border-bottom:40px solid #000; border-radius:25px; box-shadow:0 10px 15px #888;  overflow:hidden"
+                        scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="second-footer" class="text-center">
     <div class="container">
         <div class="row">
             <div class="col">
-                <p>Copyright &copy;
-                    <span id="year"></span> Erick Medina</p>
+                <h6 id="text-footer">Copyright &copy;
+                    <span id="year"></span> ONW - Designed by Erick Medina</h6>
             </div>
         </div>
     </div>

@@ -1,0 +1,75 @@
+/***** CAROUSEL*****/
+
+
+
+/***** WEST-VLAANDEREN KAART *****/
+.main-situering
+  margin-bottom: 100px
+  margin-top: 8px
+
+#situering-button
+  background-color: $colorText1
+  color: white
+
+#center-title
+  font-size: $fontSize5
+  font-family: $font1
+  color: $color1
+  margin-top: 80px
+  margin-bottom: 20px
+
+#list-ul
+  font-size: $fontSize4
+  font-family: $font3
+
+
+
+#map-westV
+  height: 600px
+  width: 700px
+
+.gradient-border
+  --borderWidth: 5px
+  background: #1D1F20
+  position: relative
+  border-radius: var(--borderWidth)
+
+.gradient-border:after
+  content: ''
+  position: absolute
+  top: calc(-1 * var(--borderWidth))
+  left: calc(-1 * var(--borderWidth))
+  height: calc(100% + var(--borderWidth) * 2)
+  width: calc(100% + var(--borderWidth) * 2)
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)
+  border-radius: calc(2 * var(--borderWidth))
+  z-index: -1
+  animation: animatedgradient 3s ease alternate infinite
+  background-size: 300% 300%
+
+@keyframes animatedgradient
+  0%
+    background-position: 0% 50%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 50%
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  #carousel-situering
+    height: 450px
+
+  #carousel-situering2
+    height: 450px
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  #carousel-situering
+    height: 200px
+
+  #carousel-situering2
+    height: 200px

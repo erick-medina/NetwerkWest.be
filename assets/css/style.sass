@@ -4,6 +4,7 @@ $backgroundColor2: #61B7A0
 $color1: #286DA8
 $color2: #63DDBD
 $color3: #CD5360
+$colorExtra: #4e4e4e
 $colorText1: #0A2239
 $font1: 'Open Sans', sans-serif
 $font2: 'Gotu', sans-serif
@@ -13,9 +14,11 @@ $textSize1: 18px
 $fontSize2: 25px
 $fontSize3: 40px
 $fontSize4: 20px
+$fontSize5: 30px
 
 
 // MIXIN
+
 
 body
   overflow-x: hidden
@@ -54,6 +57,9 @@ body
 
 // ACCORDION
 
+#accordion
+  padding-bottom: 20px
+
 .card-header
   padding: 0
   background-color: $backgroundColor2
@@ -82,7 +88,9 @@ body
 
 // PAGINA'S
 @import traject
+@import situering
 @import contact
+
 
 
 
