@@ -7,7 +7,53 @@
   background-size: cover
   padding-top: 50px
 
+// Tab Bar
+
+.nav-tabs
+  border-bottom: none
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-bottom: 30px
+
+
+.tab-link
+  border: 2px solid
+  border-color: #FAFAFA #7EBDC3 #FAFAFA
+
+
+#ondersteuners-tab, #coordinatoren-tab, #pedagogische-tab, #beheerscomite-tab
+  font-family: $font1
+  font-size: $fontSize4
+  color: $colorText1 !important
+
+  &:hover
+    animation: spring 300ms ease-out
+    font-weight: bold
+
+@keyframes spring
+  15%
+    -webkit-transform-origin: center center
+    -webkit-transform: scale(1.2, 1.1)
+
+  40%
+    -webkit-transform-origin: center center
+    -webkit-transform: scale(0.95, 0.95)
+
+  75%
+    -webkit-transform-origin: center center
+    -webkit-transform: scale(1.05, 1)
+
+  100%
+    -webkit-transform-origin: center center
+    -webkit-transform: scale(1, 1)
+
+.nav-link.active
+  border: 2px solid #FAFAFA !important
+  background-color: #098FEF !important
+
 // TEAMS
+
 .card-1
   background-color: white
 
@@ -17,8 +63,8 @@
   text-align: center
   overflow: hidden
   position: relative
-  background-color: #ffffff
-  background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%)
+  background-color: #130f40
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%)
 
   .picture
     display: inline-block
@@ -51,7 +97,8 @@
       width: 100%
       height: 100%
       border-radius: 50%
-      background-color: #1369ce
+      background-color: #50d8d7
+      background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%)
       position: absolute
       top: 0
       left: 0
@@ -71,31 +118,16 @@
   .title
     display: block
     font-size: 20px
-    color: #4e5052
+    color: $color3
     text-transform: capitalize
 
   .email
     display: block
     font-size: 18px
-    color: #0A2239
+    color: $backgroundColor
+
+  .name
+    color: $backgroundColor
+    font-family: $font1
 
 
-.flex-container
-  display: flex
-  flex-flow: row wrap
-  justify-content: space-around
-  padding: 0
-  margin: 0
-  list-style: none
-
-.flex-item
-  background: tomato
-  padding: 5px
-  width: 200px
-  height: 150px
-  margin-top: 10px
-  line-height: 150px
-  color: white
-  font-weight: bold
-  font-size: 3em
-  text-align: center
