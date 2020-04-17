@@ -6,50 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link id="links">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ondersteuningsnetwerk West || Partners</title>
+    <title>Partners || Ondersteuningsnetwerk West</title>
 </head>
 <body>
-<script src="assets/js/script.js"></script>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm py-4 navbar-light fixed-top" id="nav-bar">
-    <div class="container">
-        <a class="navbar-brand" id="logo-font" href="#" alt="">ONW LOGO</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            <span id="some" class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-4" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-4" href="traject.html">Traject</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-4" href="situering.html">Situering</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-4" href="wieiswie.html">Wie is wie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-4" href="partners.html">Partners</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-xl-4" href="vacatures.html">Vacatures</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<nav id="navMenu"></nav>
 <!-- PARTNERS HEADER -->
 <header id="partners-header">
     <div class="dark-overlay">
@@ -67,77 +30,138 @@
 <!-- MIDDLE PARAGRAPH -->
 <section id="middle-par" class="to-center text-center col-md-6 offset-md-3 mt-5">
     <div class="text-center">
-        <p>Het M-decreet stelt dat het de taak van de school gewoon onderwijs is om een zorgbeleid uit te bouwen waarin de school 3 fases doorloopt. Zo kan de school samen met het CLB en de ouders zo goed mogelijk voor de leerlingen zorgen. Om dit zorgbeleid kwaliteitsvol uit te bouwen biedt het zorgcontinuüm handvatten en inspiratie.</p>
-        <p>Voor de leerlingen met specifieke onderwijsbehoeften vervullen de vier partners elk hun eigen rol binnen het zorgbeleid van de school gewoon onderwijs. ONW Centrum werkt samen de scholen gewoon onderwijs, de scholen buitengewoon onderwijs, de centra voor leerlingbegeleiding (CLB) en de pedagogische begeleidingsdiensten (PBD).</p>
-</div>
+        <p>Het M-decreet stelt dat het de taak van de school gewoon onderwijs is om een zorgbeleid uit te bouwen waarin
+            de school 3 fases doorloopt. Zo kan de school samen met het CLB en de ouders zo goed mogelijk voor de
+            leerlingen zorgen. Om dit zorgbeleid kwaliteitsvol uit te bouwen biedt het zorgcontinuüm handvatten en
+            inspiratie.</p>
+        <p>Voor de leerlingen met specifieke onderwijsbehoeften vervullen de vier partners elk hun eigen rol binnen het
+            zorgbeleid van de school gewoon onderwijs. ONW Centrum werkt samen de scholen gewoon onderwijs, de scholen
+            buitengewoon onderwijs, de centra voor leerlingbegeleiding (CLB) en de pedagogische begeleidingsdiensten
+            (PBD).</p>
+    </div>
 </section>
 
-
-<section id="wrapper">
-    <div class="content">
-        <!-- Tab links -->
-        <div class="tabs">
-            <button class="tablinks active" data-country="London"><p data-title="London">London</p></button>
-            <button class="tablinks" data-country="Paris"><p data-title="Paris">Paris</p></button>
-            <button class="tablinks" data-country="Barcelona"><p data-title="Barcelona">Barcelona</p></button>
-            <button class="tablinks" data-country="Madrid"><p data-title="Madrid">Madrid</p></button>
+<!-- MAIN PAGE -->
+<section class="container">
+    <div class="row">
+        <div class="col">
+            <div id="title-x-puzzle" onclick="clickOnTitle()" class="puzzle-1">
+                <span>Todos eso</span>
+            </div>
         </div>
-
-        <!-- Tab content -->
-        <div class="wrapper_tabcontent">
-            <div id="London" class="tabcontent active">
-                <h3>London</h3>
-                <p>London is the capital of Great Britain. It is one of the greatest cities in the world. It is an important business and financial centre. It is an intellectual centre, too. Everywhere in London, there are open spaces: Hyde Park and Regent Park are the largest. The City is the oldest part of London. </p>
+        <div class="col">
+            <div class="puzzle-2" onclick="clickonBO()">
+                <span>BUITENGEWOON ONDERWIJS</span>
             </div>
-
-            <div id="Paris" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is in the Paris department of the Paris-Isle-of-France region The French historic, political and economic capital, with a population of only 2.5 million is located in the northern part of France. One of the most beautiful cities in the world. Home to historical monuments such as Notre Dame, the Eiffel tower (320m), Bastille, Louvre and many more. </p>
+        </div>
+        <div class="col">
+            <div class="puzzle-1">
+                <span></span>
             </div>
-
-            <div id="Barcelona" class="tabcontent">
-                <h3>Barcelona</h3>
-                <p>Barcelona has been an urban laboratory since the high Medieval Ages. A place of diversity, a backdrop for a multiplicity of social and cultural processes on multiple scales that reflect different ways of constructing the future, a city with a long experience of urban life and social innovations. </p>
-            </div>
-
-            <div id="Madrid" class="tabcontent">
-                <h3>Madrid</h3>
-                <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself.
-                </p>
+        </div>
+        <div class="col">
+            <div class="puzzle-1">
+                <span></span>
             </div>
         </div>
     </div>
+
 </section>
+<article class="">
+    <h1 class="text-center">Gewoon Onderwijs</h1>
+    <p>De scholen gewoon onderwijs zijn eigenaar van het zorgtraject van alle leerlingen. Zij handelen op elk niveau van
+        het zorgcontinuüm en kunnen hierbij ondersteuning vragen van:</p>
+    <ul>
+        <li>de centra voor leerlingbegeleiding (CLB) → op alle fases</li>
+        <li>de pedagogische begeleidingsdienst (PBD) → op fase 0 en 1</li>
+        <li>de scholen buitengewoon onderwijs → op fase 2 en 3</li>
+    </ul>
+    <p>Ondersteuningsnetwerk West werkt samen met 85 scholen basisonderwijs en 28 scholen secundair onderwijs.</p>
+    <p>De lijst met scholen vindt u <a href="http://www.agodi.be/ondersteuningsnetwerk" target="_blank">hier</a></p>
+</article>
+<article id="b-onderwijs">
+    <h1>Buitengewoon Onderwijs</h1>
+    <p>De scholen buitengewoon onderwijs gaan dan in co-creatie met de scholen gewoon onderwijs om te komen tot de best
+        passende ondersteuning op fase 2 en 3.</p>
+    <div class="row logos">
+        <div class="col"><a href="http://deast.be/" target="_blank"><img src="img/logos/deAst.png" alt=""></a>
+            <p>De Ast</p>
+        </div>
+        <div class="col"><a href="http://www.derietzang.be/" target="_blank"><img src="img/logos/deRietzang.jpg" alt=""></a>
+            <p>De Rietzang</p>
+        </div>
+        <div class="col"><a href="https://www.heilig-hartschool.be/" target="_blank"><img
+                src="img/logos/heiligHartschool.png" alt=""></a>
+            <p>Heilig Hartschool</p>
+        </div>
+        <div class="col"><a href="http://www.kustenpolder.be/brugje/" target="_blank"><img src="img/logos/tBrugje.jpg"
+                                                                                           alt=""></a>
+            <p>‘t Brugje</p>
+        </div>
+    </div>
+    <div class="row logos">
+        <div class="col"><a href="http://www.klimopdiksmuide.be/site/" target="_blank"><img src="img/logos/deKlimop.jpg"
+                                                                                            alt=""></a>
+            <p>De Klimop</p>
+        </div>
+        <div class="col"><a href="http://www.terstrepe.be/" target="_blank"><img src="img/logos/terStrepe.png"
+                                                                                 alt=""></a>
+            <p>Ter Strepe</p>
+        </div>
+        <div class="col"><a href="https://www.derozenkransbuso.be/" target="_blank"><img
+                src="img/logos/deRozenkrans.jpg" alt=""></a>
+            <p>De Rozenkrans</p>
+        </div>
+        <div class="col"><a href="https://www.destrandloper.be/" target="_blank"><img src="img/logos/strandLoper.jpg"
+                                                                                      alt=""></a>
+            <p>De Strandloper</p>
+        </div>
+    </div>
+    <div class="row logos">
+        <div class="col"><a href="https://www.heuvelzicht.be/" target="_blank"><img src="img/logos/deHeuvelZicht.png"
+                                                                                    alt=""></a>
+            <p>vzw Heuvelzicht</p>
+        </div>
+        <div class="col"><a href="http://deklimrank.kbrp.be/" target="_blank"><img src="img/logos/deKlimrank.png"
+                                                                                   alt=""></a>
+            <p>De Klimrank</p>
+        </div>
+        <div class="col"><a href="https://www.hetvlot.be/nl/" target="_blank"><img src="img/logos/hetVlot.jpg"
+                                                                                   alt=""></a>
+            <p>Het Vlot</p>
+        </div>
+        <div class="col"><a href="https://www.depinker.be/" target="_blank"><img src="img/logos/dePinker.jpg"
+                                                                                 alt=""></a>
+            <p>De Pinker</p>
+        </div>
+    </div>
+</article>
+<article>
+    <h1>CLB</h1>
+    <p>De centra voor leerlingbegeleiding (CLB) begeleiden scholen op alle fases van zorg. Bij nood aan uitgebreide zorg
+        lopen zij samen met leerlingen, ouders en de school een handelingsgericht diagnostisch traject (HGD). Uit het
+        HGD-traject kan blijken dat er expertise nodig is vanuit buitengewoon onderwijs om tegemoet te komen aan de
+        specifieke onderwijsbehoeften van een leerling. In dit geval kan de school een aanmelding doen. </p>
+    <div class="row">
+        <div class="col-6 clb-logos"><a href="https://www.vrijclb.be/vrij-clb-westhoek" target="_blank"><img src="img/logos/clb-westhoek.png" alt=""></a></div>
+        <div class="col-6 clb-logos"><a href="https://www.vrijclb.be/vrijclbdehavens" target="_blank"><img src="img/logos/clb-de-havens.jpg" alt=""></a></div>
+    </div>
+
+</article>
+<article>
+    <h1>Pedagogische Begeleidingsdiensten</h1>
+    <p>De pedagogische begeleidingsdiensten (PBD) ondersteunen vraaggestuurd scholen gewoon onderwijs binnen brede
+        basiszorg en verhoogde zorg (fase 0 en 1). Binnen het ondersteuningsnetwerk bieden de competentiebegeleider(s)
+        van de pedagogische begeleidingsdiensten begeleiding aan de ondersteuners in hun vragen op fase 2 en 3 en werken
+        ze mee aan de professionalisering van de ondersteuners.</p>
+</article>
+
 
 <!-- FOOTER -->
-<footer id="main-footer" class="text-center mt-5 p-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 align-self-center">
-                <h3 class="footer-title mb-4">Vind-ons-leuk op Facebook!</h3>
-                <a id="btn" href="https://www.facebook.com/Ondersteuningsnetwerk-West-106662227648329/" target="_blank">
-                    <i class="fa fa-facebook mt-2"></i>
-                </a>
-            </div>
-            <div class="col-xl-6 col-lg-6">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOndersteuningsnetwerk-West-106662227648329%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                        width="380" height="300" style="border-left:20px solid #000; border-right:20px solid #000; border-top:40px solid #000; border-bottom:40px solid #000; border-radius:25px; box-shadow:0 10px 15px #888;  overflow:hidden" scrolling="no" frameborder="0"
-                        allowTransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </div>
-    </div>
-</footer>
-<footer id="second-footer" class="text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h6 id="text-footer">Copyright &copy;
-                    <span id="year"></span> ONW - Designed by Erick Medina</h6>
-            </div>
-        </div>
-    </div>
-</footer>
+<footer id="footer"></footer>
 
+<script src="assets/js/script.js"></script>
+<script src="assets/js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

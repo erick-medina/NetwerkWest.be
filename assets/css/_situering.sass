@@ -1,5 +1,19 @@
 /***** CAROUSEL*****/
 
+.carousel-item
+  height: 400px
+
+
+.situering-image-1
+  background: url("../../img/SITUERING.jpg")
+  background-size: cover
+
+
+.situering-image-2
+  background: url("../../img/SITUERING2.jpg")
+  background-size: cover
+
+
 
 /***** WEST-VLAANDEREN KAART *****/
 .main-situering
@@ -61,17 +75,7 @@
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px)
-  #carousel-situering
-    height: 450px
+@media (max-width: 768px)
+  .carousel-item
+    min-height: 200px
 
-  #carousel-situering2
-    height: 450px
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)
-  #carousel-situering
-    height: 200px
-
-  #carousel-situering2
-    height: 200px

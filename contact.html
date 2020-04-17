@@ -6,65 +6,34 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link id="links">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ondersteuningsnetwerk West || Contact</title>
+    <title>Contact || Ondersteuningsnetwerk West</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm py-4 navbar-light fixed-top" id="nav-bar">
-        <div class="container">
-            <a class="navbar-brand" id="logo-font" href="#" alt="">ONW LOGO</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link mr-xl-4" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-xl-4" href="traject.html">Traject</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-xl-4" href="situering.html">Situering</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-xl-4" href="wieiswie.html">Wie is wie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-xl-4" href="partners.html">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-xl-4" href="vacatures.html">Vacatures</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- Navbar -->
+<nav id="navMenu"></nav>
 <main>
     <!-- CONTACT HEADER -->
     <header id="contact-header">
         <div class="dark-overlay">
-        <div class="contact-inner container">
-            <div class="row">
-                <div class="col-md-6 m-auto text-center">
-                    <h1>Contact Us</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+            <div class="contact-inner container">
+                <div class="row">
+                    <div class="col-md-6 m-auto text-center">
+                        <h1>Contact Us</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
     <!-- Google Map -->
     <h1 class="text-center my-4">Ons address</h1>
     <section class="container-fluid m-0 p-0">
         <div id="map-container-google-4" class="z-depth-1-half map-container-4">
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pluimstraat%2022%2C%208600%20Diksmuide&key=AIzaSyC5YJh8iagHhuQ65-w-6KK8QWQbMXjNEKE" allowfullscreen></iframe>
+            <iframe width="600" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Pluimstraat%2022%2C%208600%20Diksmuide&key=AIzaSyC5YJh8iagHhuQ65-w-6KK8QWQbMXjNEKE"
+                    allowfullscreen></iframe>
         </div>
     </section>
     <!-- Contact form -->
@@ -95,35 +64,41 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Naam*" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Naam*"
+                                               required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="E-mailadres*" required>
+                                        <input type="email" name="email" class="form-control" placeholder="E-mailadres*"
+                                               required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone" class="form-control" placeholder="Telefoon (optioneel)">
+                                        <input type="tel" name="phone" class="form-control"
+                                               placeholder="Telefoon (optioneel)">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="subject" class="form-control" placeholder="Onderwerp*" required>
+                                        <input type="text" name="subject" class="form-control" placeholder="Onderwerp*"
+                                               required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 mb-1">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="6" placeholder="Bericht*" required></textarea>
+                                        <textarea class="form-control" name="message" rows="6" placeholder="Bericht*"
+                                                  required></textarea>
                                         <small class="text-muted">* Required field</small>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="submit" value="Verstuur bericht" class="btn btn-outline-danger btn-block">
+                                        <input type="submit" value="Verstuur bericht"
+                                               class="btn btn-outline-danger btn-block">
                                     </div>
                                 </div>
                             </div>
@@ -135,17 +110,10 @@
     </section>
 </main>
 <!-- FOOTER -->
-<footer id="main-footer" class="text-center p-4">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p>Copyright &copy;
-                    <span id="year"></span> Erick Medina</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<footer id="footer"></footer>
 
+<script src="assets/js/script.js"></script>
+<script src="assets/js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
