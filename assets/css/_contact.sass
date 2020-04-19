@@ -5,14 +5,46 @@
   background: url('../../img/contact.jpg') fixed -600px -260px
   padding-top: 50px
 
+  .dark-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    background-size: cover
+    background: rgba(255, 229, 237, 0.7)
 
-#contact-header .dark-overlay
-  position: absolute
-  top: 0
+/* Google Map */
+.map-container-4
+  overflow: hidden
+  padding-bottom: 30.25%
+  position: relative
+  height: 0
+
+.map-container-4 iframe
   left: 0
+  top: 0
+  height: 100%
   width: 100%
-  background: rgba(255, 229, 237, 0.7)
+  position: absolute
 
+.map-container-4
+  overflow: hidden
+  padding-bottom: 30.25%
+  position: relative
+  height: 0
 
 #contact-header .contact-inner
   padding-top: 150px
+
+// Section coordinatoren
+#bg-contact
+  background-color: $color1
+  color: $backgroundColor
+
+.btn-outline-danger
+  border-color: $color1
+  color: #0E0693
+  &:hover
+    background-color: $color1
+    border: $backgroundColor
+
