@@ -5,14 +5,17 @@
 
 .nav-link
   font-size: $textSize1
-  font-family: $font2
-  color: $colorText1 !important
+  text-transform: uppercase
+  font-family: $font1
+  color: #0d0a0b !important
   font-weight: bold
+  padding-left: 1rem !important
+  padding-right: 1rem !important
 
 #logo-font
   color: $colorText1
 
-$color: (1: #ED4337, 2: #A1D3A2, 3: #50B8E7, 4: darken(#FFF53C, 15%), 5: #2CEAA3, 6: #6184D8, 7: #9B6A6C)
+$color: (1: #ed4337, 2: #A1D3A2, 3: #50b8e7, 4: darken(#FFF53C, 15%), 5: #2CEAA3, 6: #6184D8, 7: #9B6A6C)
 $count: 7
 
 .nav-link
@@ -21,6 +24,10 @@ $count: 7
     z-index: -1
     left: 50%
     transform: translateX(-50%) rotate(0deg)
+
+.nav-item
+  &:hover
+    border-left: $color1 2px dashed
 
 
 .nav-item

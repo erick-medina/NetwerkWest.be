@@ -3,7 +3,8 @@
 document.getElementById('links').innerHTML =
     '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"\n' +
     '          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">\n' +
-    '    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">\n' +
+    '<link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">\n' +
+    '<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">\n' +
     '    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">\n' +
     '    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">'
 
@@ -18,22 +19,22 @@ document.getElementById('navMenu').innerHTML =
     '        <div class="collapse navbar-collapse text-center" id="navbarNav">' +
     '            <ul class="navbar-nav ml-auto">' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link mr-xl-4" href="index.html">Home</a>' +
+    '                    <a class="nav-link" href="index.html">Home</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link mr-xl-4" href="traject.html">Traject</a>' +
+    '                    <a class="nav-link" href="traject.html">Traject</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link mr-xl-4" href="situering.html">Situering</a>' +
+    '                    <a class="nav-link" href="situering.html">Situering</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link mr-xl-4" href="wieiswie.html">Wie is wie</a>' +
+    '                    <a class="nav-link" href="wieiswie.html">Wie is wie</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link mr-xl-4" href="partners.html">Partners</a>\n' +
+    '                    <a class="nav-link" href="partners.html">Partners</a>\n' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link mr-xl-4" href="vacatures.html">Vacatures</a>' +
+    '                    <a class="nav-link" href="vacatures.html">Vacatures</a>' +
     '                </li>\n' +
     '                <li class="nav-item">' +
     '                    <a class="nav-link" href="contact.html">Contact</a>' +
