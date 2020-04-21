@@ -4,9 +4,11 @@ document.getElementById('links').innerHTML =
     '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"\n' +
     '          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">\n' +
     '<link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">\n' +
+    '<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">' +
     '<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">\n' +
-    '    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">\n' +
-    '    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">'
+    '<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap" rel="stylesheet">' +
+    '<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">\n' +
+    '<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">'
 
 // NAVBAR HTML
 document.getElementById('navMenu').innerHTML =
@@ -37,7 +39,7 @@ document.getElementById('navMenu').innerHTML =
     '                    <a class="nav-link" href="vacatures.html">Vacatures</a>' +
     '                </li>\n' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link" href="contact.html">Contact</a>' +
+    '                    <a class="nav-link" href="contact.php">Contact</a>' +
     '                </li>' +
     '            </ul>' +
     '        </div>' +

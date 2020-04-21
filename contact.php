@@ -1,40 +1,139 @@
-<?php
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
+    <link id="links">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact || Ondersteuningsnetwerk West</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav id="navMenu"></nav>
+<main>
+    <!-- CONTACT HEADER -->
+    <header id="contact-header">
+        <div class="dark-overlay">
+            <div class="contact-inner container">
+                <div class="row">
+                    <div class="col-md-6 m-auto text-center">
+                        <h1 class="display-4">Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-// validate input
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $mailFrom = $_POST['mail'];
-    $phone = $_POST['phone'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    <!-- MIDDLE PARAGRAPH -->
+    <section id="middle-par" class="text-center col-md-6 offset-md-3 mt-5">
+        <p class="text-center vov shake-vertical">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste nemo praesentium
+            recusandae. Accusantium, adipisci consectetur expedita incidunt magni modi nihil officiis suscipit tempora
+            tempore. Aperiam culpa ipsum iste quas..</p>
+    </section>
 
-    // email receiver
-    $mailTo = "erickmedinabe@gmail.com";
-    // who the mail is from
-    $headers = "From: ". $mailFrom;
-    // message sent
-    $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+    <!-- Google Map -->
+    <h3 class="text-center mt-lg-5 mb-lg-4">Ons address</h3>
+    <section class="container-fluid m-0 p-0">
+        <div id="map-container-google-4" class="z-depth-1-half map-container-4">
+            <iframe width="600" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Pluimstraat%2022%2C%208600%20Diksmuide&key=AIzaSyC5YJh8iagHhuQ65-w-6KK8QWQbMXjNEKE"
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- Contact form -->
+    <h3 class="mt-5 text-center">Contacteer ons</h3>
+    <section id="contact" class="py-3">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-4 col-lg-5 order-2">
+                    <div id="bg-contact" class="card p-4">
+                        <div  class="card-body">
+                            <h4 class="text-center">Coördinatoren</h4>
+                            <h4>Eveline Pil</h4>
+                            <p>Oostende – Gistel – Veurne – Westkust</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> 0483 29 80 48</p>
+                            <p><i class="fa fa-envelope" aria-hidden="true"></i> eveline.pil@netwerkwest.be</p>
+                            <h4 class="mt-4">Carmen Supeene</h4>
+                            <p>Diksmuide – Ieper – Poperinge</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> 0468 48 02 56</p>
+                            <p><i class="fa fa-envelope" aria-hidden="true"></i> carmen.supeene@netwerkwest.be</p>
+                        </div>
+                    </div>
+                </aside>
+                <form method="post" name="emailfrom" action="contactform.php" class="col-md-8 col-lg-7">
+                    <div class="card p-4 order-1">
+                        <div class="card-body">
+                            <h3 class="text-center">Stuur ons een berichtje</h3>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Naam*"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="E-mailadres*"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" class="form-control"
+                                               placeholder="Telefoon (optioneel)">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Onderwerp*"
+                                               required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-1">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="6" placeholder="Bericht*"
+                                                  required></textarea>
+                                        <small class="text-muted">* Required field</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Verstuur bericht"
+                                               class="btn btn-outline-danger btn-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- FOOTER -->
+<footer id="footer"></footer>
 
-    // show successful message to user
-    if (mail($mailTo, $subject, $txt, $headers)) {
-        echo "<h1>Sent successfully! Thank you"." ".$name.", We will contact you shortly</h1>";
-
-    } else {
-      echo 'Something went wrong!';
-    }
-
-
-        /*
-    mail($mailTo, $subject, $txt, $headers);
-    // function to take us back to the homepage
-    header("Location: contact.html?mailsend");
-
-require('contact.html');
-        */
-}
-
-
-
-
-
+<script src="assets/js/script.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+</script>
+</body>
+</html>
 
