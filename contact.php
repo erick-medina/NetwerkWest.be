@@ -104,7 +104,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="submit" value="Verstuur bericht"
+                                        <input type="submit" name="submit" value="Verstuur bericht"
                                                class="btn btn-outline-danger btn-block">
                                     </div>
                                 </div>
