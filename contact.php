@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/dcc1e3a94c.js" crossorigin="anonymous"></script>
     <link id="links">
+    <?php include('contactform.php'); ?>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Contact || Ondersteuningsnetwerk West</title>
 </head>
@@ -51,7 +52,7 @@
                 <aside class="col-md-4 col-lg-5 order-2">
                     <div id="bg-contact" class="card p-4">
                         <div  class="card-body">
-                            <h4 class="text-center">Coördinatoren</h4>
+                            <h4 class="text-center pb-lg-3">Coördinatoren</h4>
                             <h4>Eveline Pil</h4>
                             <p>Oostende – Gistel – Veurne – Westkust</p>
                             <p><i class="fa fa-phone" aria-hidden="true"></i> 0483 29 80 48</p>
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                 </aside>
-                <form method="post" name="emailfrom" action="contactform.php" class="col-md-8 col-lg-7">
+                <form method="post" name="emailfrom" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="col-md-8 col-lg-7">
                     <div class="card p-4 order-1">
                         <div class="card-body">
                             <h3 class="text-center">Stuur ons een berichtje</h3>
@@ -71,42 +72,51 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Naam*"
-                                               required>
+                                        <input type="text" name="name" class="form-control" value="<?= $name ?>" placeholder="Naam*" autofocus>
+                                            <small class="text-danger"><?= $name_error ?></small>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="E-mailadres*"
-                                               required>
+                                        <input type="text" name="email" class="form-control" value="<?= $mailFrom ?>" placeholder="E-mailadres*">
+                                        <small class="text-danger"><?= $email_error ?></small>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone" class="form-control"
+                                        <input type="text" name="phone" class="form-control" value="<?= $phone ?>"
                                                placeholder="Telefoon (optioneel)">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="subject" class="form-control" placeholder="Onderwerp*"
-                                               required>
+                                        <input type="text" name="subject" class="form-control" value="<?= $subject ?>" placeholder="Onderwerp*">
+                                        <small class="text-danger"><?= $subject_error ?></small>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 mb-1">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="6" placeholder="Bericht*"
-                                                  required></textarea>
-                                        <small class="text-muted">* Required field</small>
+                                        <textarea class="form-control" type="text" name="message" rows="6" placeholder="Bericht*" value="<?= $message ?>"
+                                                  ></textarea>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <small class="text-muted">* Required field</small>
+                                            </div>
+                                            <div class="col-3">
+                                                <small class="text-danger"><?= $message_error ?></small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <input type="submit" name="submit" value="Verstuur bericht"
-                                               class="btn btn-outline-danger btn-block">
+                                               class="btn btn-outline-primary btn-block">
                                     </div>
+                                    <?= $successMessage ?>
+                                    <?= $failMessage ?>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +128,6 @@
 </main>
 <!-- FOOTER -->
 <footer id="footer"></footer>
-
 <script src="assets/js/script.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

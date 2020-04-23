@@ -1,32 +1,72 @@
 <?php
 
+// define empty variables
+
+$name_error = $email_error = $subject_error = $message_error = "" ;
+$name = $mailFrom = $phone = $subject = $message = $successMessage = $failMessage = "";
+
 // validate input
-if (isset($_POST['submit'])) {
-
-    $name = $_POST['name'];
-    $mailFrom = $_POST['email'];
-    $phone = $_POST['phone'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    // email receiver
-    $mailTo = 'erickmedinabe@gmail.com';
-    // who the mail is from
-    $headers = "From: " . $mailFrom;
-    // message sent
-    $txt = "Bericht van het contactformulier: \".\n\n\" . Zender: " . $name  . ".\n\n" . "Telefoonnummer is: " . $phone .  ".\n\n" . $message ;
-
-    // show successful message to user
-
-    if (mail($mailTo, $subject, $txt, $headers)) {
-        echo "<div class='alert alert-success'>Sent successfully! Thank you" . " " . $name . ", We will contact you shortly</div> <a href='index.html'>Go back to homepage</a>";
-        header("Location: contact.php?mailsend");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) { // name verification
+        $name_error = "Naam vereist";
     } else {
-        echo '<div class="alert alert-danger">Something went wrong! Please try again</div>';
+        $name = test_input($_POST["name"]);
+        // check if name contains letters and whitespace only
+        if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+            $name_error = "Only letters and white space allowed";
+        }
+    }
+
+    if (empty($_POST["email"])) {
+        $email_error = "E-mailadres vereist";
+    } else {
+        $mailFrom = test_input($_POST["email"]);
+        if (!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)) {
+            $email_error = "Ongeldig e-mailadres";
+        }
+    }
+
+    if (empty($_POST["subject"])) {
+        $subject_error = "Onderwerp vereist";
+    } else {
+        $subject = test_input($_POST["subject"]);
+    }
+
+    if (empty($_POST["message"])) {
+        $message_error = "Bericht vereist";
+    } else {
+        $message = test_input($_POST["message"]);
+    }
+
+    if ($name_error == '' && $email_error == '' && $message_error == '' && $subject_error == '') {
+        $message_body = "";
+        unset($_POST['submit']);
+        foreach ($_POST as $key => $value) {
+            $message_body .= "$key: $value\n";
+        }
+//email receiver
+        $mailTo = 'erickmedinabe@gmail.com';
+// who the mail is from
+        $headers = "From: " . $mailFrom;
+// message sent
+        $txt = "Bericht van het contactformulier: \".\n\n\" . Zender: " . $name  . ".\n\n" . "Telefoonnummer is: " . $phone .  ".\n\n" . $message ;
+
+// show successful message to user
+        if (mail($mailTo, $subject, $txt, $headers)) {
+            $successMessage = "<div class='alert alert-success text-center'>Sent successfully! Thank you" . " " . $name . ", We will contact you shortly</div>";
+            $name = $mailFrom = $phone = $message = $subject = '';
+
+            } else {
+            $failMessage = "<div class='alert alert-danger text-center'>Something went wrong! Please try again</div>";
+        }
     }
 }
 
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 ?>
-
-
-
