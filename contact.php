@@ -16,27 +16,21 @@
 <nav id="navMenu"></nav>
 <main>
     <!-- CONTACT HEADER -->
-    <header id="contact-header">
-        <div class="dark-overlay">
-            <div class="contact-inner container">
-                <div class="row">
-                    <div class="col-md-6 m-auto text-center">
-                        <h1 class="display-4">Contact Us</h1>
-                    </div>
-                </div>
+    <header class="contact-header">
+        <div class="overlay-contact">
+            <div class="col-12 justify-content-center text-contact">
+                <h1 class="display-2 vov zoom-in-left">Contact</h1>
             </div>
+            <img src="img/contact.jpg" alt="">
         </div>
     </header>
 
     <!-- MIDDLE PARAGRAPH -->
     <section id="middle-par" class="text-center col-md-6 offset-md-3 mt-5">
-        <p class="text-center vov shake-vertical">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste nemo praesentium
-            recusandae. Accusantium, adipisci consectetur expedita incidunt magni modi nihil officiis suscipit tempora
-            tempore. Aperiam culpa ipsum iste quas..</p>
+        <h3 class="text-center mt-lg-5 mb-lg-4">Ons address</h3>
     </section>
 
     <!-- Google Map -->
-    <h3 class="text-center mt-lg-5 mb-lg-4">Ons address</h3>
     <section class="container-fluid m-0 p-0">
         <div id="map-container-google-4" class="z-depth-1-half map-container-4">
             <iframe width="600" height="450" frameborder="0" style="border:0"
@@ -50,14 +44,14 @@
         <div class="container">
             <div class="row">
                 <aside class="col-md-4 col-lg-5 order-2">
-                    <div id="bg-contact" class="card p-4">
+                    <div id="bg-contact" class="card pt-4">
                         <div  class="card-body">
-                            <h4 class="text-center pb-lg-3">Coördinatoren</h4>
-                            <h4>Eveline Pil</h4>
+                            <h4 class="text-center pb-lg-3 font-weight-bold">Coördinatoren</h4>
+                            <h4 class="font-italic">Eveline Pil</h4>
                             <p>Oostende – Gistel – Veurne – Westkust</p>
                             <p><i class="fa fa-phone" aria-hidden="true"></i> 0483 29 80 48</p>
                             <p><i class="fa fa-envelope" aria-hidden="true"></i> eveline.pil@netwerkwest.be</p>
-                            <h4 class="mt-4">Carmen Supeene</h4>
+                            <h4 class="font-italic mt-lg-5">Carmen Supeene</h4>
                             <p>Diksmuide – Ieper – Poperinge</p>
                             <p><i class="fa fa-phone" aria-hidden="true"></i> 0468 48 02 56</p>
                             <p><i class="fa fa-envelope" aria-hidden="true"></i> carmen.supeene@netwerkwest.be</p>
@@ -102,7 +96,7 @@
                                                   ></textarea>
                                         <div class="row">
                                             <div class="col-9">
-                                                <small class="text-muted">* Required field</small>
+                                                <small class="text-muted">* Veld vereist</small>
                                             </div>
                                             <div class="col-3">
                                                 <small class="text-danger"><?= $message_error ?></small>

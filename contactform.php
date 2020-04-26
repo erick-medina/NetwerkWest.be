@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $name = test_input($_POST["name"]);
         // check if name contains letters and whitespace only
-        if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-            $name_error = "Only letters and white space allowed";
+        if (!preg_match("/^[a-zA-Z'. -]+$/",$name)) {
+            $name_error = "Enkel letters zijn toegelaten";
         }
     }
 
@@ -49,15 +49,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // who the mail is from
         $headers = "From: " . $mailFrom;
 // message sent
-        $txt = "Bericht van het contactformulier: \".\n\n\" . Zender: " . $name  . ".\n\n" . "Telefoonnummer is: " . $phone .  ".\n\n" . $message ;
+        $txt = "Bericht van het contactformulier: "."\n\n". "Zender: " . $name  . ".\n" . "Telefoonnummer is: " . $phone .  "\n\n" . "Bericht: " . $message ;
 
 // show successful message to user
         if (mail($mailTo, $subject, $txt, $headers)) {
-            $successMessage = "<div class='alert alert-success text-center'>Sent successfully! Thank you" . " " . $name . ", We will contact you shortly</div>";
+            $successMessage = "<div class='alert alert-success text-center'>Uw bericht is succesvol verstuurd! Bedankt" . " " . $name . ", We nemen contact met u op.</div>";
             $name = $mailFrom = $phone = $message = $subject = '';
 
             } else {
-            $failMessage = "<div class='alert alert-danger text-center'>Something went wrong! Please try again</div>";
+            $failMessage = "<div class='alert alert-danger text-center'>Er is iets fout gegaan! Probeer opnieuw</div>";
         }
     }
 }
