@@ -23,16 +23,27 @@ body
   margin-top: 90px
   background-color: $backgroundColor
 
+  h1
+    font-family: $font1
+
   h3
     font-family: $font1
 
+  h4
+    font-family: $font1
+
+  p
+    color: $colorText1
 // HOMEPAGE
 // NAVBAR
 @import navbar
 
 //CAROUSEL
-
-
+.carousel-item
+  height: 450px
+  img
+    height: 450px !important
+    object-fit: cover
 // PARTICLE BACKGROUND
 
 .particle
@@ -59,7 +70,6 @@ body
 #middle-title
   font-family: $font5
   font-weight: bold
-  font-size: 80px
   color: $color1
 
 .section_title
@@ -69,7 +79,7 @@ body
   margin-bottom: -20px
 
 #middle-par
-  font-size: $fontSize4
+  font-size: $fontSize2
   color: $colorText1
   font-family: $font2
 
@@ -167,10 +177,38 @@ body
 // FOOTER
 @import footer
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px)
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+  .padding-top-slider
+    padding-top: 55px
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
   .carousel-item
-    height: 450px
+    height: 300px
+    img
+      height: 300px !important
+      object-fit: cover
+
+  //.img-fluid
+  //  height: 300px
+  //  width: auto
+
+  #middle-title
+    padding-top: 15px
+    font-size: 50px
+    margin-bottom: 15px !important
+
+  .section_title
+    display: none
+
+  #middle-par
+    margin-bottom: 15px !important
+
+  .padding-top-slider
+    padding-top: 0 !important
+
+
 
 // PAGINA'S
 @import traject

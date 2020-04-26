@@ -1,17 +1,24 @@
 /*Contact header*/
 
-#contact-header
-  height: 200px
-  background: url('../../img/contact.jpg') fixed -600px -260px
-  padding-top: 50px
+.contact-header
+  text-align: center
+  position: relative
+  background-attachment: fixed
 
-  .dark-overlay
+  .overlay-contact
+    position: relative
+    opacity: 0.6
+
+  .text-contact
     position: absolute
-    top: 0
-    left: 0
+    padding-top: 50px
+    color: #000000
+    font-weight: bolder
+
+  img
     width: 100%
-    background-size: cover
-    background: rgba(255, 229, 237, 0.7)
+    background-size: contain
+    max-height: 200px
 
 /* Google Map */
 .map-container-4
@@ -34,12 +41,16 @@
   height: 0
 
 #contact-header .contact-inner
-  padding-top: 150px
+  margin-top: 106px
+  padding-bottom: 61px
 
 // Section coordinatoren
 #bg-contact
   background-color: $color1
   color: $backgroundColor
+  p
+    color: $backgroundColor !important
+
 
 .btn-outline-danger
   border-color: $color1
@@ -48,24 +59,17 @@
     background-color: $color1
     border: $backgroundColor
 
-// message to display for form
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+#bg-contact
+  padding-bottom: 42px !important
 
-.error
-  color: red !important
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  .contact-header
+    img
+      height: 375px
 
-.message-alert
-  position: relative !important
-  padding: .75rem 1.25rem !important
-  margin-bottom: 1rem !important
-  border: 1px solid transparent !important
-  border-radius: .25rem !important
-
-.success_message
-  color: #155724 !important
-  background-color: #d4edda !important
-  border-color: #c3e6cb !important
-
-.fail_message
-  color: #721c24 !important
-  background-color: #f8d7da !important
-  border-color: #f5c6cb !important
+    .text-contact
+      .display-2
+        font-size: 77px

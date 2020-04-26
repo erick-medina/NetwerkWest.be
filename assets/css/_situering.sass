@@ -1,19 +1,10 @@
 /***** CAROUSEL*****/
 
-.carousel-item
-  height: 400px
+#sliderOne
+  opacity: 0.7
 
-
-.situering-image-1
-  background: url("../../img/SITUERING.jpg") 0px -300px
-  background-size: cover
-
-
-.situering-image-2
-  background: url("../../img/SITUERING2.jpg") 0px -280px
-  background-size: cover
-
-
+.carousel-caption
+  color: #50b8e7
 
 /***** WEST-VLAANDEREN KAART *****/
 .main-situering
@@ -42,7 +33,7 @@
 
 #map-westV
   height: 600px
-  width: 600px
+  width: 570px
 
 .gradient-border
   --borderWidth: 5px
@@ -73,9 +64,19 @@
   100%
     background-position: 0% 50%
 
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+    #center-title
+      margin-top: 40px
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  .carousel-caption
+    text-align: start !important
+    .display-2
+      font-size: 70px !important
+  #center-title
+    margin-top: 40px
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media (max-width: 768px)
-  .carousel-item
-    min-height: 200px
-
+  #map-westV
+    height: 350px !important
+    width: 300px !important

@@ -4,6 +4,13 @@
   background-color: #bfe299
   background-image: linear-gradient(315deg, #bfe299 0%, #66b5f6 74%)
 
+// Fb plugin
+#fb-plugin-sm
+  display: none
+
+#fb-plugin-md
+  display: none
+
 .footer-title
   font-family: $font1
   color: $colorText1
@@ -62,7 +69,7 @@
   background-color: #000000
   background-image: linear-gradient(147deg, #000000 0%, #04619f 74%)
   padding: 10px
-
+  position: sticky !important
 
 #text-footer
   color: $backgroundColor
@@ -74,8 +81,37 @@
 @media only screen and (max-width: 600px)
   #main-footer
     height: 480px
+
   #btn
     margin-bottom: 14px
 
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+  #fb-plugin
+    display: none
 
+  #fb-plugin-sm
+    display: none
+
+  #fb-plugin-md
+    display: block
+
+  #main-footer
+    margin-top: 15px !important
+    padding-bottom: 28rem !important
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  #main-footer
+    margin-top: 15px !important
+    padding-bottom: 30rem !important
+
+  #fb-plugin
+    display: none !important
+
+  #fb-plugin-md
+    display: none !important
+
+  #fb-plugin-sm
+    display: block !important
 

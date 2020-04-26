@@ -1,12 +1,45 @@
 // Header
 
-body
-  #partners-header
-    height: 200px
-    max-width: 100%
-    background: url('../../img/PARTNERS.jpg')
+.partners-header
+  text-align: center
+  position: relative
+  background-attachment: fixed
+
+  .overlay-partners
+    position: relative
+    opacity: 0.6
+
+  .text-partners
+    position: absolute
+    padding-top: 50px
+    color: #ed4337
+    font-weight: bolder
+
+  img
+    width: 100%
+    background-size: contain
+    max-height: 200px
+
+#partners-header2
+  height: 200px
+  background: url('../../img/PARTNERS.jpg') fixed -600px -260px
+  padding-top: 50px
+
+  .dark-overlay3
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
     background-size: cover
-    padding-top: 55px
+    background: rgba(229, 255, 232, 0.69)
+
+    .text-partners2
+      color: #2ec68d
+
+#partners-header2 .contact-inner3
+  margin-top: 85px
+  padding-bottom: 44px
+
 
 .paragraphs
     font-size: $fontSize4
@@ -56,6 +89,7 @@ body
   height: 100%
 
 
+
 .go-overlay
   background: rgba(41, 97, 34, 0.8)
 
@@ -68,8 +102,23 @@ body
 .pb-overlay
   background: rgba(23, 64, 97, 0.8)
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  .partners-header
+    img
+      height: 375px
 
+  .gonderwijs-overlay
+    .container
+      .text-uppercase
+        font-size: 30px
 
+  .clb-logos
+    width: 270px
+    height: 200px
 
+  .katholiek-logo
+    width: 300px
+    height: 100px
 
 

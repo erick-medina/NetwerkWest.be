@@ -1,11 +1,45 @@
 // Header
 
-#wieiswie-header
-  height: 200px
-  max-width: 100%
-  background: url('../../img/WIEISWIE.png')
-  background-size: cover
-  padding-top: 50px
+.wieiswie-header
+  text-align: center
+  position: relative
+  background-attachment: fixed
+
+  .overlay-wieiswie
+    position: relative
+    opacity: 0.7
+
+  .text-wieis
+    position: absolute
+    padding-top: 50px
+    color: #efe200
+    font-weight: bolder
+
+  img
+    width: 100%
+    background-size: contain
+    max-height: 200px
+
+//#wieiswie-header2
+//  height: 200px
+//  background: url('../../img/WIEISWIE.png') fixed -600px -260px
+//  padding-top: 50px
+//
+//  .dark-overlay2
+//    position: absolute
+//    top: 0
+//    left: 0
+//    width: 100%
+//    background-size: cover
+//    background: rgba(229, 236, 255, 0.69)
+//
+//    .text-wieiswie
+//      color: #efe200
+//
+//#wieiswie-header2 .contact-inner2
+//  margin-top: 85px
+//  padding-bottom: 44px
+
 
 // Tab Bar
 
@@ -136,4 +170,14 @@
     color: $backgroundColor
     font-family: $font1
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  .text-wieis
+    padding-top: 0 !important
 
+  .wieiswie-header
+    img
+      height: 375px
+
+  .nav-tabs
+    margin-top: 46px

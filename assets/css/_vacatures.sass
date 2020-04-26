@@ -1,11 +1,24 @@
 // Header
 
-#vacatures-header
-  height: 200px
-  max-width: 100%
-  background: url('../../img/joinOurTeam.jpg') 0 -180px
-  background-size: cover
-  padding-top: 55px
+.vacatures-header
+  text-align: center
+  position: relative
+  background-attachment: fixed
+
+  .overlay-vacatures
+    position: relative
+    opacity: 0.6
+
+  .text-vacatures
+    position: absolute
+    padding-top: 50px
+    color: #9B6A6C
+    font-weight: bolder
+
+  img
+    width: 100%
+    background-size: contain
+    max-height: 200px
 
 .items
   background-color: #2a2a72
@@ -33,3 +46,13 @@
     font-family: $font1
     font-size: $fontSize4
     color: $colorText1
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  .vacatures-header
+    img
+      height: 375px
+
+    .text-vacatures
+      .display-2
+        font-size: 77px
