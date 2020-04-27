@@ -20,12 +20,15 @@
     background-size: contain
     max-height: 200px
 
-// team work
-.team-content
-  .email
-    font-size: 15px !important
-
 // Tab Bar
+
+#beheers-title, #pedago-title, #coord-title, #onder-title
+  font-size: 20px !important
+  color: $backgroundColor !important
+
+.inleiding-text
+  font-size: $textSize1
+  font-family: $font1
 
 .tab-content
   margin-bottom: 100px
@@ -37,43 +40,45 @@
   justify-content: center
   margin-bottom: 30px
 
-.tab-link
-  border: 2px solid
-  border-color: #FAFAFA $colorText1 #FAFAFA
-
 .bgPa
-  background-color: #130f40
-  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%)
+  background-color: #36669d
+  background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%)
 
-#ondersteuners-tab, #coordinatoren-tab, #pedagogische-tab, #beheerscomite-tab
-  font-family: $font1
-  font-size: $fontSize4
-  color: $colorText1 !important
+.padding-l
+  padding: 30px 0 25px !important
+.padding-le
+  padding: 30px 0 0 !important
+.bgCo
+  background-color: #aecad6
+  background-image: linear-gradient(315deg, #aecad6 0%, #b8d3fe 74%)
 
-  &:hover
-    animation: spring 300ms ease-out
-    font-weight: bold
+.bgPe
+  background-color: #2884b8
+  background-image: linear-gradient(315deg, #2884b8 0%, #d1bad2 74%)
 
-@keyframes spring
-  15%
-    -webkit-transform-origin: center center
-    -webkit-transform: scale(1.2, 1.1)
+.bgBe
+  background-color: #537895
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%)
 
-  40%
-    -webkit-transform-origin: center center
-    -webkit-transform: scale(0.95, 0.95)
 
-  75%
-    -webkit-transform-origin: center center
-    -webkit-transform: scale(1.05, 1)
+#ondersteuners-tab
+  background-color: #36669d
+  background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%)
 
-  100%
-    -webkit-transform-origin: center center
-    -webkit-transform: scale(1, 1)
+#pedagogische-tab
+  background-color: #2884b8
+  background-image: linear-gradient(315deg, #2884b8 0%, #d1bad2 74%)
+
+#coordinatoren-tab
+  background-color: #aecad6
+  background-image: linear-gradient(315deg, #aecad6 0%, #b8d3fe 74%)
+
+#beheerscomite-tab
+  background-color: #537895
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%)
 
 .nav-link.active
-  border: 2px solid #FAFAFA !important
-  background-color: #098FEF !important
+  border: 10px solid #FAFAFA !important
 
 // TEAMS
 
@@ -82,7 +87,7 @@
 
 .our-team
   padding: 30px 0 40px
-  margin-bottom: 30px
+  margin-bottom: 20px
   text-align: center
   overflow: hidden
   position: relative
@@ -100,7 +105,7 @@
       width: 100%
       height: 0
       border-radius: 50%
-      background-color: $color3
+      background-color: $buttoncol4
       position: absolute
       bottom: 135%
       right: 0
@@ -118,8 +123,8 @@
       width: 100%
       height: 100%
       border-radius: 50%
-      background-color: #50d8d7
-      background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%)
+      background-color: #ffffb5
+      background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%)
       position: absolute
       top: 0
       left: 0
@@ -138,18 +143,19 @@
 
   .title
     display: block
-    font-size: 20px
-    color: $color3
+    font-size: 15px
+    color: $backgroundColor2
     text-transform: capitalize
 
   .email
-    display: block
-    font-size: 18px
-    color: $backgroundColor
+    font-size: 15px
+    color: $colorText1
+    font-family: $font1
 
   .name
     color: $backgroundColor
     font-family: $font1
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px)
