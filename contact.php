@@ -36,7 +36,7 @@
 
     <!-- MIDDLE PARAGRAPH -->
     <section id="middle-par" class="text-center col-md-6 offset-md-3 mt-5">
-        <h3 class="text-center mt-lg-5 mb-lg-4">Ons address</h3>
+        <h3 class="text-center mt-lg-5 mb-lg-4">Ons adres</h3>
     </section>
 
     <!-- Google Map -->
