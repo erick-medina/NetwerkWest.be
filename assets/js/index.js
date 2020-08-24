@@ -14,10 +14,10 @@ document.getElementById('navMenu').innerHTML =
     '                    <a class="nav-link" href="index.html">Home</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link" href="traject.html">Traject</a>' +
+    '                    <a class="nav-link" href="situering.html">Situering</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
-    '                    <a class="nav-link" href="situering.html">Situering</a>' +
+    '                    <a class="nav-link" href="traject.html">Traject</a>' +
     '                </li>' +
     '                <li class="nav-item">' +
     '                    <a class="nav-link" href="wieiswie.html">Wie is wie</a>' +
@@ -76,7 +76,7 @@ document.getElementById('footer').innerHTML =
     '        <div class="row">\n' +
     '            <div class="col">\n' +
     '                <h6 id="text-footer">Copyright &copy;\n' +
-    '                    <span id="year"></span> ONW - Developed by Erick Medina</h6>\n' +
+    '                    <span id="year"></span> ONW</h6>\n' +
     '            </div>\n' +
     '        </div>\n' +
     '    </div>\n' +
