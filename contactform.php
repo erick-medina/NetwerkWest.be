@@ -45,7 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message_body .= "$key: $value\n";
         }
 //email receiver
-        $mailTo = 'info@netwerkwest.be';
+        $mailTo = 'erickmedinabe@gmail.com';
+//        $mailTo = 'info@netwerkwest.be';
 // who the mail is from
         $headers = "From: " . $mailFrom;
 // message sent
